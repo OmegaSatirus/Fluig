@@ -54,4 +54,5 @@ Uma boa experiência no final de tudo, bem desafiadora, diga-se de passagem.
 4. 🌗 Implementar tema claro e tema escuro.
 5. 🔐 Criar um teste de força para as senhas.
 6. 🧩 Organizar os blocos/módulos de forma estruturada.
+7. 👤 Exibir os dados do usario na pagina de conta
 
