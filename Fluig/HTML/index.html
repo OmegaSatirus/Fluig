@@ -26,7 +26,7 @@
         </nav>
     </header>
 
-    <main id="FocusBody" class="flexV alignCen">
+    <main id="FocusBody" class="flexV alignCen ">
         <div id="CRUD">
             <section id="FormProducts">
                 <h1>Gestão de Produtos</h1>
@@ -55,14 +55,18 @@
                 </form>
             </section>
 
-            <section id="SectFilter">
-                <label for="filterCategory">Filtrar por Categoria:</label>
-                <select id="filterCategory" onchange="filterByCategory()">
-                    <option value="">Selecione uma opção</option>
-                </select>
-
-                <label for="searchProduct">Buscar Produto:</label>
-                <input type="text" id="searchProduct" oninput="searchProduct()" placeholder="Digite o nome do produto">
+            <section id="SectFilter" class="flexH alignArd w90">
+                <span class="w45">
+                    <label for="filterCategory">Filtrar por Categoria:</label>
+                    <select id="filterCategory" onchange="filterByCategory()">
+                        <option value="">Selecione uma opção</option>
+                    </select>
+                </span>
+                <span >
+                    <label for="searchProduct">Buscar Produto:</label>
+                    <input type="text" id="searchProduct" oninput="searchProduct()"
+                        placeholder="Digite o nome do produto">
+                </span>
             </section>
 
 

@@ -1,11 +1,16 @@
+body{
+    overflow: hidden;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    border-radius: 8px;
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #747474;
 }
 
 th, td {
@@ -29,6 +34,28 @@ input, select, button {
 }
 
 .actions button {
+    border-radius: 8px;
     padding: 5px;
     cursor: pointer;
+}
+
+.actions button:hover {
+    background-color: #616161;
+    color: whitesmoke;
+    transition: all 1s ease-in-out;
+}
+
+#SectFilter, #FormProducts {
+    width: 90vw;
+    margin: auto    ;
+}
+
+#SectFilter input, select {
+    border-radius: 4px;
+    padding: .5vh .5vw;
+}
+
+#FormProducts input {
+    border-radius: 4px;
+    padding: .5vh .5vw;
 }

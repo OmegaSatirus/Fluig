@@ -108,6 +108,7 @@ background-size: cover;
 #FooterBody {
     position: fixed;
     bottom: 0;
+    color: #EAE6E5;
     height: 3vh;
     width: 100%;
     background-color: var(--color1);
@@ -267,9 +268,6 @@ input[type="checkbox"]{
     align-items: center;
 } 
 
-.alignTop{
-    align-items: flex-start;
-}
 
 .shodow {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
@@ -295,5 +293,8 @@ input[type="checkbox"]{
     width: 27%;
     padding: 1.5vw;
 }
-
+.w20{
+    width: 17%;
+    padding: 1.5vw;
+}
 
