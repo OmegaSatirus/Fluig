@@ -1,0 +1,261 @@
+:root {
+    --color1: #171D1C;
+    --color2: #EAE6E5;
+    --color3: #7F7B82;
+    --color4: #A30015;
+    --color5: #38AECC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#PageBody, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color2);
+}
+
+#MainHeader {
+    position: fixed;
+    width: 100vw;
+    height:15vh;
+    padding: 1.5vw 1.5vh;
+
+    background-color: var(--color1);
+}
+
+#LogoLink {
+    width: 40vw;
+}
+
+#LogoLink a img {
+    height: 10vh;
+    cursor: pointer;
+}
+
+#LogoText {
+    width: 60%;
+    font-size: 30pt;
+    color: var(--color2);
+    cursor: pointer;
+}
+
+#ListHeader {
+    width: 50vw;
+    list-style-type: none;
+}
+
+#ListHeader a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#ListHeader a:hover {
+    color: var(--color3);
+}
+
+#FocusBody {
+    margin-top: 10vh;
+    width: 100%;
+    height: 75vh;
+    padding: 2.5vw 2.5vh;
+}
+
+#AccountImg {
+    border-radius: 8px 8px 0 0;
+    border: #171D1C solid 2px;
+    width: 20vw;
+    height: 30vh;
+    background-color: #7F7B82;
+    border-bottom: none;
+}
+
+#ProfilePic {
+    box-shadow: 5px 5px 10px 5% black;
+}
+
+#AccountImg img {
+    background-color: var(--color5);
+    border-radius: 50%;
+    border: #171D1C solid 2px; 
+}
+
+#AccountInfo {
+    border-radius: 0 0 8px 8px;
+    border: #171D1C solid 2px;
+    width: 20vw;
+    height: 30vh;
+    background-color: #7F7B82;
+    border-top: none;
+}
+
+#FooterBody {
+    bottom: 0;
+}
+
+#Intro{
+    width: 40vw;
+}
+
+#FormArea{
+    width: 95vw;
+    height: 50vh;
+}
+
+#FormArea input {
+    height: 3vh;
+    padding-left:.5vw ;
+    border-radius: 4px;
+    border: #171D1C solid 2px;
+    font-size: 15pt;
+    margin: 0 1.5vh 1.5vh 1.5vh;
+}
+
+#FormArea input[type="submit"]{
+    padding: 0 ;
+}
+#FormArea label{
+    margin: 1.5vh;
+    font-weight: bolder;
+    font-size: 16pt;
+}
+
+input[type="checkbox"]{ 
+    display:block ;
+    margin: .1px;
+    transform: translateY(10px) scale(1.5);
+}
+
+.flexH {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flexV {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.alignBtw {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.alignArd {
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.fakeButtonBigger {
+    border: 2px solid black;
+    background-color: var(--color2);
+    cursor: pointer;
+    padding: 1vw 1vh;
+    font-size: 20pt;
+    border-radius: 8px;
+}
+
+.fakeButtonBigger:hover {
+    background-color: var(--color4);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+
+}
+
+.fakeButton {
+    border: 2px solid black;
+    background-color: var(--color2);
+    cursor: pointer;
+    padding: .5vw .5vh;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.fakeButton:hover{
+    background-color: var(--color4);
+    color: whitesmoke;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.mediumButton{
+    border: 2px solid black;
+    background-color: var(--color2);
+    cursor: pointer;
+    padding: .8vh;
+    border-radius: 8px;
+    height: 4   vh;
+    width: 40%;
+    text-align: center;
+    font-size: 14pt;
+}
+
+.smallButton{
+    border: 2px solid black;
+    background-color: var(--color2);
+    cursor: pointer;
+    padding: .8vh;
+    border-radius: 8px;
+    height: 4   vh;
+    width: 20%;
+    text-align: center;
+    font-size: 10pt;
+}
+
+.alignCen {
+    justify-content: center;
+    align-items: center;
+}
+
+.alignCenV {
+    justify-content:center;
+}
+
+.alignCenH {
+    align-items: center;
+}
+
+.alignDir {
+    justify-content: right;
+    align-items: center;
+}
+
+.alignEsq {
+    justify-content: left;
+    align-items: center;
+} 
+
+.alignTop{
+    align-items: flex-start;
+}
+
+.shodow {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}   
+
+.w90{
+    width: 90%;
+}
+
+.w45{
+    width: 42%;
+    padding: 1.5%;
+}
+.w50{
+    width: 47%;
+    padding: 1.5vw;
+}
+.w30{
+    width: 27%;
+    padding: 1.5vw;
+}

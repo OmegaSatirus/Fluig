@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="flexV">
+    <header id="MainHeader">
+        <nav id="NavHeader" class="flexH alignArd">
+            <div id="LogoLink" class="flexH">
+                <a href="../HTML/index.html"><img src="../_assets/images/Fluig-Logo.png" alt="Logo Fluig"></a>
+                <div id="LogoText" class="alignEsq">
+                    <h1><b><a href="../HTML/index.html"></a>FLUIG</b></h1>
+                </div>
+            </div>
+            <ul id="ListHeader" class="flexH alignBtw">
+                <li><a href="../HTML/index.html" class="fakeButtonBigger">HOME</a></li>
+                <li><a href="../HTML/about.html" class="fakeButtonBigger">ABOUT US</a></li>
+                <li><a href="../HTML/conta.html" class="fakeButtonBigger">CONTA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="FocusBody" class="flexV alignCen">
+        <section id="FormArea">
+            <form id="LoginForm" method="post" onsubmit="validateLogin(event)" class="flexV alignCen">
+                <h2>Faça seu Login</h2>
+                <div class="w90 flexH alignCen">
+                    <div class="w100 flexV">
+                        <label for="LoginEmail">Email:</label>
+                        <input type="email" name="email" id="LoginEmail" class="shodow" required>
+
+                        <label for="LoginPassword">Senha:</label>
+                        <input type="password" name="password" id="LoginPassword" class="shodow" required>
+                    </div>
+                </div>
+                <br>
+                <input type="submit" id="Submit" value="Entrar" class="shodow fakeButton smallButton">
+                <p class="alignCen">
+                    Não tem uma conta? <a href="../HTML/conta.html">Registre-se aqui</a>.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer id="FooterBody" class="flexH alignArd">
+        <p>JC.TWS - João Cristiano Rodrigues Pimenta &copy; 2025</p>
+    </footer>
+
+    <script src="../JS/login.js" defer></script>
+</body>
+
+</html>

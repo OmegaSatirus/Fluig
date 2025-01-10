@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+</head>
+<body class="flexV">
+    <header id="MainHeader">
+        <nav id="NavHeader" class="flexH alignArd">
+            <div id="LogoLink" class="flexH">
+                <a href="../HTML/index.html"><img src="../_assets/images/Fluig-Logo.png" alt=""></a>
+                <div id="LogoText" class="alignEsq">
+                    <h1><b><a href="../HTML/index.html"></a>FLUIG</b></h1>
+                </div>
+            </div>
+            <ul id="ListHeader" class="flexH alignBtw">
+                <li><a href="../HTML/index.html" class="fakeButtonBigger ">HOME</a></li>
+                <li><a href="../HTML/about.html" class="fakeButtonBigger ">ABOUT US</a></li>
+                <li><a href="../HTML/conta.html" class="fakeButtonBigger ">CONTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="FocusBody" class="flexV alignCen">
+        <section id="AccountImg" class="flexV alignArd shodow">
+            <div id="ProfilePic">
+                <img src="../_assets/images/PFP.png" alt="Foto de Perfil">
+            </div>
+        </section>
+        <section id="AccountInfo" class="flexV alignArd shodow" >
+            <h1>Bem-vindo, <span id="UserName"></span>!</h1> <!-- Corrigido aqui -->
+            <div>
+                <p><strong>Nome:</strong> <span id="UserFullName"></span></p>
+                <p><strong>Email:</strong> <span id="UserEmail"></span></p>
+                <p><strong>Data de Nascimento:</strong> <span id="UserBirthday"></span></p>
+            </div>
+            <button id="LogoutButton" class="fakeButton">Sair</button>
+        </section>
+    </main>
+
+    <footer id="FooterBody" class="flexH alignArd">
+        <p>JC.TWS - João Cristiano Rodrigues Pimenta &copy; 2025 </p>
+    </footer>
+
+    <script src="account.js" defer></script>
+    <script src="../JS/forceLogout.js" defer></script> 
+</body>
+</html>
