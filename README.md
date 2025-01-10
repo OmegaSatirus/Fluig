@@ -18,6 +18,6 @@
 #### Opcionais
 1. 📸 Permitir troca de foto de perfil.  
 2. ✏️ Permitir edição dos dados do usuário.  
-3. 🎨 Adicionar funcionalidade para troca de tema.  
+3. 🎨 Trocar tema
 4. 🌗 Implementar tema claro e tema escuro.  
 5. 🔐 Criar um teste de força para as senhas.  
