@@ -4,7 +4,7 @@ function forceLogout() {
     console.log("Logout efetuado com sucesso!");
     alert("Logout efetuado com sucesso!"); 
 
-    window.location.href = "registro.html"; 
+    window.location.href = "login.html"; 
 }
 
 window.onload = function() {

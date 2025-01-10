@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLUIG</title>
+    <link rel="icon" href="../_assets/images/Fluig-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../_assets/images/Fluig-Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/CRUD.css">
+</head>
+
+<body class="flexV">
+    <header id="MainHeader">
+        <nav id="NavHeader" class="flexH alignArd">
+            <div id="LogoLink" class="flexH">
+                <a href="../HTML/index.html"><img src="../_assets/images/Fluig-Logo.png" alt=""></a>
+                <div id="LogoText" class="alignEsq">
+                    <h1><b><a href="../HTML/index.html">FLUIG</a></b></h1>
+                </div>
+            </div>
+            <ul id="ListHeader" class="flexH alignDir">
+                <li><a href="../HTML/conta.html" class="fakeButtonBigger">CONTA</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="FocusBody" class="flexV alignCen">
+        <div id="CRUD">
+            <section id="FormProducts">
+                <h1>Gestão de Produtos</h1>
+
+                <form id="productForm">
+                    <label for="productName">Nome do Produto:</label>
+                    <input type="text" id="productName" required>
+
+                    <label for="category">Categoria:</label>
+                    <input type="text" id="category" required>
+
+                    <label for="price">Preço:</label>
+                    <input type="number" id="price" step="0.01" required>
+
+                    <label for="unit">Unidade:</label>
+                    <select id="unit" required>
+                        <option value="Litros">Litros</option>
+                        <option value="Kgs">Kgs</option>
+                        <option value="Unidades">Unidades</option>
+                    </select>
+
+                    <label for="stock">Quantidade em Estoque:</label>
+                    <input type="number" id="stock" min="0" required>
+
+                    <button type="submit">Adicionar Produto</button>
+                </form>
+            </section>
+
+            <section id="SectFilter">
+                <label for="filterCategory">Filtrar por Categoria:</label>
+                <select id="filterCategory" onchange="filterByCategory()">
+                    <option value="">Selecione uma opção</option>
+                </select>
+
+                <label for="searchProduct">Buscar Produto:</label>
+                <input type="text" id="searchProduct" oninput="searchProduct()" placeholder="Digite o nome do produto">
+            </section>
+
+
+            <section id="SectTable">
+                <table id="productTable">
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th>
+                            <th>Categoria</th>
+                            <th>Preço</th>
+                            <th>Unidade</th>
+                            <th>Quantidade em Estoque</th>
+                            <th>Totalizador de Preço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+        </div>
+        <footer id="FooterBody" class="flexH alignCen">
+            <p>JC.TWS - João Cristiano Rodrigues Pimenta &copy; 2025 </p>
+        </footer>
+</body>
+<script src="../JS/blockNoUser.js"></script>
+<script src="../JS/Cerebro/CRUD.js"></script>
+
+</html>

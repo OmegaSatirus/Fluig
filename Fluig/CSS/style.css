@@ -2,8 +2,8 @@
     --color1: #171D1C;
     --color2: #EAE6E5;
     --color3: #7F7B82;
-    --color4: #A30015;
-    --color5: #38AECC;
+    --color4: #38AECC;
+    --color5: #A30015;
 }
 
 * {
@@ -45,6 +45,14 @@
     cursor: pointer;
 }
 
+#LogoText a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+#LogoText a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
 #ListHeader {
     width: 50vw;
     list-style-type: none;
@@ -61,9 +69,9 @@
 }
 
 #FocusBody {
-    margin-top: 10vh;
+    margin-top: 15vh;
     width: 100%;
-    height: 75vh;
+    height: 85vh;
     padding: 2.5vw 2.5vh;
 }
 
@@ -77,13 +85,15 @@
 }
 
 #ProfilePic {
+    width: 75%;
+    height: 90%;
+    background-image: url(../_assets/images/PFP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+background-size: cover;
     box-shadow: 5px 5px 10px 5% black;
-}
-
-#AccountImg img {
-    background-color: var(--color5);
     border-radius: 50%;
-    border: #171D1C solid 2px; 
+    background-color: #A30015;
 }
 
 #AccountInfo {
@@ -96,7 +106,12 @@
 }
 
 #FooterBody {
+    position: fixed;
     bottom: 0;
+    height: 3vh;
+    width: 100%;
+    background-color: var(--color1);
+    padding: 1.5vw 1.5vh;
 }
 
 #Intro{
@@ -126,6 +141,23 @@
     font-size: 16pt;
 }
 
+#CRUD{
+    margin-top: 0;
+    height: 60vh;
+    width: 95vw;
+}
+
+#FormProducts{
+    margin-top: 0;
+    height:10vh;
+    width: 95vw;
+}
+
+#SectTable{
+    width: 95vw;
+    overflow: scroll;
+    height: 56vh;
+}
 input[type="checkbox"]{ 
     display:block ;
     margin: .1px;
@@ -247,6 +279,10 @@ input[type="checkbox"]{
     width: 90%;
 }
 
+.w60{
+    width: 60%;
+}
+
 .w45{
     width: 42%;
     padding: 1.5%;
@@ -259,3 +295,5 @@ input[type="checkbox"]{
     width: 27%;
     padding: 1.5vw;
 }
+
+

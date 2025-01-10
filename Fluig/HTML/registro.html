@@ -4,94 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Conta</title>
+    <title>Registro</title>
+    <link rel="icon" href="../_assets/images/Fluig-Logo.png" type="image/x-icon">
+
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/modal.css">
 </head>
 
 <body class="flexV">
-    <header id="MainHeader">
-        <nav id="NavHeader" class="flexH alignArd">
-            <div id="LogoLink" class="flexH">
-                <a href="../HTML/index.html"><img src="../_assets/images/Fluig-Logo.png" alt=""></a>
-                <div id="LogoText" class="alignEsq">
-                    <h1><b><a href="../HTML/index.html"></a>FLUIG</b></h1>
-                </div>
-            </div>
-            <ul id="ListHeader" class="flexH alignBtw">
-                <li><a href="../HTML/index.html" class="fakeButtonBigger">HOME</a></li>
-                <li><a href="../HTML/about.html" class="fakeButtonBigger">ABOUT US</a></li>
-                <li><a href="../HTML/conta.html" class="fakeButtonBigger">CONTA</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main id="FocusBody" class="flexV alignCen">
-        <section id="FormArea">
-            <form id="MainForm" method="post" onsubmit="saveUserData(event)" class="flexV alignCen">
-                <h2>Preencha seus dados</h2>
-                <div class="w90 flexH alignArd">
-                    <div class="w45 flexV">
-                        <label for="Name">Nome:</label>
-                        <input type="text" name="name" id="Name" class="shodow">
-
-                        <label for="Email">Email:</label>
-                        <input type="email" name="email" id="Email" class="shodow">
-                    </div>
-                    <div class="w45 flexV">
-                        <label for="Password">Senha:</label>
-                        <input type="password" minlength="6" name="password" id="Password" class="shodow">
-
-                        <label for="CofirmPassword">Confirmar Senha:</label>
-                        <input type="password" minlength="6" name="confirmPassword" id="ConfirmPassword" class="shodow">
+    <body class="flexV">
+        <header id="MainHeader">
+            <nav id="NavHeader" class="flexH alignArd">
+                <div id="LogoLink" class="flexH">
+                    <a href="../HTML/index.html"><img src="../_assets/images/Fluig-Logo.png" alt=""></a>
+                    <div id="LogoText" class="alignEsq">
+                        <h1><b><a href="../HTML/index.html">FLUIG</a></b></h1>
                     </div>
                 </div>
-                <br>
-                <label for="Age">Data de Nascimento:</label>
-                <input type="date" name="idade" id="Age" min="1960-01-01" class="shodow">
-                <br>
-                <div class="w45">
-                    <div class="flexH alignCen">
-                        <label for="Termos"></label>
-                        <input type="checkbox" name="termos" id="Termos" value="termos">
-                        <p>Aceito os 
-                            <a href="#" id="AbreModal">Termos e Condições</a>
-                        </p>
-                    </div>
-                    
-                    <div id="ModalTermos" class="modal hidden">
-                        <div class="conteudoModal">
-                            <span class="fecharModal" id="FechaModal">&times;</span>
-                            <h2>Termos e Condições</h2>
-                            <p>
-                                Aqui estão os Termos e Condições detalhados que os usuários precisam aceitar para continuar.
-                                Inclua aqui todo o conteúdo necessário.
+                <ul id="ListHeader" class="flexH alignDir">
+                    <li><a href="../HTML/conta.html" class="fakeButtonBigger">CONTA</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="FocusBody" class="flexV alignCen">
+            <section id="FormArea">
+                <form id="MainForm" method="post" onsubmit="saveUserData(event)" class="flexV alignCen">
+                    <h2>Preencha seus dados</h2>
+                    <div class="w60 flexV alignArd">
+                    <div class="w90 flexH alignArd">
+                        <div class="w45 flexV">
+                            <label for="Name">Nome:</label>
+                            <input type="text" name="name" id="Name" class="shodow">
 
-                                <h1>Lorem, ipsum.</h1>
-
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam vel perspiciatis a facere dolores! Repellendus natus veritatis tempora eveniet laborum atque animi? Dicta, accusamus. Quae et dolorem nostrum officiis architecto molestiae, reprehenderit harum error tempore eos inventore repellat veritatis ipsum deserunt rerum recusandae aperiam, itaque saepe aliquid necessitatibus iure. Quidem.
-                                </p>
-
-                                <h2>Lorem, ipsum.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum sed, fugit distinctio laboriosam minus commodi molestias consectetur laudantium. Facere eligendi ad porro cum illo placeat voluptas, doloribus odit perspiciatis omnis. Laudantium eos laboriosam minima fugit culpa obcaecati atque repellat incidunt soluta sed, possimus numquam voluptatem ipsam illum nulla? Nostrum odio aspernatur voluptates ipsum nihil? Ullam ex error iusto. Necessitatibus explicabo voluptatibus vel delectus harum sint beatae provident? Quod, delectus reprehenderit? Officia a aspernatur error illo accusamus placeat deserunt ut autem neque sed optio in, facere, consectetur minus debitis. Veritatis incidunt rerum impedit accusamus quos sequi dolore ad id pariatur aspernatur odit voluptates voluptatem, expedita velit veniam! Tenetur harum itaque perferendis eius sit ducimus dolore dicta culpa illo illum aut, provident dolor earum eaque ratione pariatur iste soluta vero nam impedit quia nulla? Quaerat vitae quis impedit perspiciatis doloribus cum optio non quas voluptate quisquam. Dicta placeat nam pariatur omnis!</p>
-                            </p>
+                            <label for="Email">Email:</label>
+                            <input type="email" name="email" id="Email" class="shodow">
                         </div>
-                    </div>
-                    
-                </div>
-                <input type="submit" id="Submit" value="Enviar" class="shodow fakeButton mediumButton">
-            </form>
-        </section>
-    </main>
-    <footer id="FooterBody" class="flexH alignArd">
-        <p>JC.TWS - João Cristiano Rodrigues Pimenta &copy; 2025 </p>
-    </footer>
+                        <div class="w45 flexV">
+                            <label for="Password">Senha:</label>
+                            <div class="flexH .w45">
+                                <input type="password"  minlength="6" name="password" id="Password" class="shodow">
+                                <input type="checkbox" name="" class="ShowPassaword">
+                            </div>
 
-    <script src="../JS/ageTester.js" defer></script>
-    <script src="../JS/emptyInput.js" defer></script>
-    <script src="../JS/saveUserData.js" defer></script>
-    <script src="../JS/userDataLoader.js" defer></script>
-    <script src="../JS/modal.js" defer  ></script>
-</body>
+                            <label for="CofirmPassword">Confirmar Senha:</label>
+                            <div class="flexH .w45">
+                                <input type="password" minlength="6" name="confirmPassword" id="ConfirmPassword"class="shodow">
+                            </div>
+                        </div>
+
+                        </div>
+                        <label for="Age">Data de Nascimento:</label>
+                        <input type="date" name="idade" id="Age" min="1960-01-01" class="shodow">
+                        <div class="w45">
+                            <div class="flexH alignCen">
+                                <label for="Termos"></label>
+                                <input type="checkbox" name="termos" id="Termos" value="termos">
+                                <p>Aceito os
+                                    <a href="#" id="AbreModal">Termos e Condições</a>
+                                </p>
+                            </div>
+
+                            <div id="ModalTermos" class="modal hidden">
+                                <div class="conteudoModal">
+                                    <span class="fecharModal" id="FechaModal">&times;</span>
+                                    <h2>Termos e Condições</h2>
+                                    <p>
+                                        Aqui estão os Termos e Condições detalhados que os usuários precisam aceitar
+                                        para continuar.
+                                        Inclua aqui todo o conteúdo necessário.
+
+                                    <h1>Lorem, ipsum.</h1>
+
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam vel
+                                        perspiciatis a facere dolores! Repellendus natus veritatis tempora eveniet
+                                        laborum atque animi? Dicta, accusamus. Quae et dolorem nostrum officiis
+                                        architecto molestiae, reprehenderit harum error tempore eos inventore repellat
+                                        veritatis ipsum deserunt rerum recusandae aperiam, itaque saepe aliquid
+                                        necessitatibus iure. Quidem.
+                                    </p>
+
+                                    <h2>Lorem, ipsum.</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eum sed, fugit
+                                        distinctio laboriosam minus commodi molestias consectetur laudantium. Facere
+                                        eligendi ad porro cum illo placeat voluptas, doloribus odit perspiciatis omnis.
+                                        Laudantium eos laboriosam minima fugit culpa obcaecati atque repellat incidunt
+                                        soluta sed, possimus numquam voluptatem ipsam illum nulla? Nostrum odio
+                                        aspernatur voluptates ipsum nihil? Ullam ex error iusto. Necessitatibus
+                                        explicabo voluptatibus vel delectus harum sint beatae provident? Quod, delectus
+                                        reprehenderit? Officia a aspernatur error illo accusamus placeat deserunt ut
+                                        autem neque sed optio in, facere, consectetur minus debitis. Veritatis incidunt
+                                        rerum impedit accusamus quos sequi dolore ad id pariatur aspernatur odit
+                                        voluptates voluptatem, expedita velit veniam! Tenetur harum itaque perferendis
+                                        eius sit ducimus dolore dicta culpa illo illum aut, provident dolor earum eaque
+                                        ratione pariatur iste soluta vero nam impedit quia nulla? Quaerat vitae quis
+                                        impedit perspiciatis doloribus cum optio non quas voluptate quisquam. Dicta
+                                        placeat nam pariatur omnis!</p>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <input type="submit" id="Submit" value="Enviar" class="shodow fakeButton mediumButton">
+                        <p> <a href="../HTML/login.html">Já tenho uma conta</a></p>
+                </form>
+            </section>
+        </main>
+        <footer id="FooterBody" class="flexH alignArd">
+            <p>JC.TWS - João Cristiano Rodrigues Pimenta &copy; 2025 </p>
+        </footer>
+
+        <script src="../JS/ageTester.js" defer></script>
+        <script src="../JS/emptyInput.js" defer></script>
+        <script src="../JS/saveUserData.js" defer></script>
+        <script src="../JS/userDataLoader.js" defer></script>
+        <script src="../JS/modal.js" defer></script>
+        <script src="../JS/showPassword.js" defer></script>
+    </body>
 
 </html>
